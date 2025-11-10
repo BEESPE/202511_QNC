@@ -1,0 +1,10 @@
+services:
+  pyspark:
+    build: .
+    container_name: pyspark
+    volumes:
+      - ./spark:/home/dev
+    ports:
+      - 4040:4040
+    environment:
+      - PYSPARK_PYTHON=python
