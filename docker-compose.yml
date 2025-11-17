@@ -1,7 +1,7 @@
 services:
   pyspark:
     build: .
-    container_name: pyspark
+    container_name: pyspark3
     volumes:
       - ./spark:/home/dev
     ports:
